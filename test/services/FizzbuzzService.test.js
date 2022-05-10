@@ -25,5 +25,6 @@ describe("Unit Tests for the FizzbuzzService class", () => {
         expect( explorer30 ).toEqual( expect.not.objectContaining({trick: 'BUZZ'}) );
         expect( explorer30 ).toEqual( expect.not.objectContaining({trick: 'FIZZBUZZ'}) );
         expect( explorer30 ).toEqual( expect.not.objectContaining({trick: '30'}) );
+        expect( explorer30 ).toEqual( expect.objectContaining({trick: 30}) );
     });
 });
